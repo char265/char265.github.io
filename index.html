@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>SRM CGPA Calculator</h1>
+        <div class="form-row">
+            <div class="col">
+                <input id="course-code" class="form-control" type="text" placeholder="Subject Code">
+            </div>
+            <div class="col">
+                <input id="unit-load" class="form-control" type="number" placeholder="Credits" min="1" max="15">
+            </div>
+            <div class="col">
+                <select id="grade" class="form-control">
+                    <option value="">Grade</option>
+                    <option value="10">O</option>
+                    <option value="9">A+</option>
+                    <option value="8">A</option>
+                    <option value="7">B+</option>
+                    <option value="6">B</option>
+                    <option value="5">C</option>
+                    <option value="0">F</option>
+                </select>
+            </div>
+            <div class="col">
+                <input id="add" class="btn btn-primary" type="button" value="Add">
+
+            </div>
+        </div>
+        <table id="table" class="table table-bordered display-none">
+            <thead>
+                <tr>
+                    <th>Subject Code</th>
+                    <th>Credits</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+        
+            </tbody>
+            <tfoot id="tfoot">
+        
+            </tfoot>
+        </table>
+        <div class="row">
+            <div class="col">
+                <input id="calc-gp" class="btn btn-success display-none" type="button" value="Calc GP">
+            </div>
+            <div class="col">
+            <input id="clear" class="btn btn-warning display-none" type="button" value="Clear">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <br>
+    <a href="https://instagram.com/cha_ran_ran?igshid=MzRlODBiNWFlZA=="><img src="instagram.jpeg" alt="instagram link" width="100" height="100"></a>
+    <a href="http://chrnmahendrakar.hashnode.dev/"><img src="hasnode.jpeg" alt="hash link" width="100" height="100"></a>
+    <a href="https://www.linkedin.com/in/charan-mahendrakar-961552230/"><img src="linked.jpeg" alt="linkedln" width="100" height="100"></a>
+    <h5>
+        <div style="white-space: pre">
+            Note: Type anything in subject code 
+            Eg:- Instead of typing full subject code
+                   you can use 1,2,3,4,...
+        </div>
+    </h5>
+</body>
+</html>
